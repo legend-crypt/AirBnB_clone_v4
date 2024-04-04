@@ -37,6 +37,7 @@ class DBStorage:
                                              HBNB_MYSQL_PWD,
                                              HBNB_MYSQL_HOST,
                                              HBNB_MYSQL_DB))
+        # self.__engine = create_engine('sqlite:///database.db')
         if HBNB_ENV == "test":
             Base.metadata.drop_all(self.__engine)
 
